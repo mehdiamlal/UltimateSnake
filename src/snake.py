@@ -63,3 +63,13 @@ class Snake:
         """Grows the snake by one block"""
         self.segments.append(Turtle())
         format_component(self.segments[-1], self.segments[-2].pos())
+
+    def disappear(self):
+        """Makes the snake disappear (before restarting the game)."""
+        for s in self.segments:
+            s.hideturtle()
+
+    def reset(self):
+        """Resets the snake to its original length."""
+        self.disappear()
+        self.__init__()

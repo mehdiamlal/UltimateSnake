@@ -9,7 +9,7 @@ class Food(Turtle):
         super().__init__()
         self.penup()
         self.setpos(STARTING_POSITION)
-        self.color("blue")
+        self.color("yellow")
         self.shape("circle")
         self.shapesize(0.5)
 
